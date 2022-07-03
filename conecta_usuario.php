@@ -1,7 +1,6 @@
 <?php
 include("conectar.php");
 
-session_start();
 
 if (isset($_POST['login'])) {
     if (strlen($_POST['usuario']) >= 1 && strlen($_POST['contra']) >= 1){
