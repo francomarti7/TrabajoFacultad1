@@ -14,12 +14,14 @@ if (isset($_POST['login'])) {
                 header("location: main.php");
                 exit();
             } else {
-                '
+                ?>
+                
                 <script>
                     alert("Usuario no existente por favor verifique sus datos.")
-                    window.location = "main.php";
+                    window.location = "index.php";
                 </script>
-                ';
+                <?php
+                
                 exit();
             }
 
@@ -28,9 +30,5 @@ if (isset($_POST['login'])) {
     
     
     
-
-
-
-
 
 ?>
